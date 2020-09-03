@@ -101,12 +101,13 @@ img {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
 }
-.startScreen h1,
-.startScreen h2 {
+.endText,
+.startText,
+.gg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,6 +118,11 @@ img {
   -webkit-text-stroke: 3px black;
   -webkit-text-fill-color: white;
   letter-spacing: 2px;
+}
+.gg {
+  top: 42%;
+  font-size: 66px;
+  display: none;
 }
 .startScreen h2 {
   top: 57%;

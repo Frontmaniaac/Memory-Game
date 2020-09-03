@@ -4,6 +4,7 @@ const startScreen = document.querySelector(".startScreen");
 const time = document.querySelector(".time");
 const startText = document.querySelector(".startText");
 const endText = document.querySelector(".endText");
+const gg = document.querySelector(".gg");
 
 (function shuffle() {
   memoWrap.forEach((memo) => {
@@ -52,15 +53,25 @@ function resetBoard() {
 const handleStart = () => {
   clearInterval(countTime);
   countTime = setInterval(() => {
-    if (seconds <= 59 && seconds > 10) {
+    if (seconds <= 59 && seconds > 10 && score < 8) {
       seconds--;
       time.textContent = `00:${seconds}`;
-    } else if (seconds <= 10 && seconds > 0) {
+    } else if (seconds <= 10 && seconds > 0 && score < 8) {
       seconds--;
       time.textContent = `00:0${seconds}`;
+    } else if (score === 8 && seconds > 0) {
+      startScreen.style.display = "block";
+      gg.style.display = "block";
+      startText.textContent = `You score ${score} in ${59 - seconds} seconds`;
+      endText.textContent = `Click to restart `;
+      clearInterval(countTime);
+      startScreen.addEventListener("click", () => {
+        window.location.reload(false);
+      });
     } else {
       time.textContent = `00:00`;
       startScreen.style.display = "block";
+      gg.style.display = "block";
       startText.textContent = `Your score was ${score}`;
       endText.textContent = `Click to restart `;
       clearInterval(countTime);
