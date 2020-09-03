@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Play", sans-serif;
+  background-image: linear-gradient(rgb(236, 209, 90), rgb(195, 246, 113));
+  overflow: hidden;
+}
+:root {
+  --bright-color: #7ff152d0;
+}
+.upperText {
+  position: relative;
+  top: 15%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.upperText h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.cardBack,
+.cardFront {
+  cursor: pointer;
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background-color: #000;
+  color: var(--bright-color);
+  border-radius: 20px;
+  text-align: center;
+  border: 5px solid var(--bright-color);
+  margin: 5px;
+  backface-visibility: hidden;
+}
+.cardFront {
+  transform: rotateY(180deg);
+}
+
+.cardFront p {
+  line-height: 3.5;
+  font-size: 30px;
+}
+.cardBack p {
+  position: relative;
+  top: 25px;
+  font-size: 26px;
+}
+.flip {
+  position: relative;
+  width: 135px;
+  height: 130px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.memoWrap {
+  perspective: 1000px;
+}
+.memoWrap .flipRotate {
+  transform: rotateY(-180deg);
+}
+/* WRAP GAME*/
+.memoGameWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 575px;
+  height: 575px;
+  top: 10%;
+  position: relative;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  left: calc(50% - 575px / 2);
+}
+img {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+}
+.diamond {
+  position: relative;
+  left: -7px;
+}
+.orange {
+  position: relative;
+  left: -7px;
+}
+.sword {
+  height: 130px;
+  width: 130px;
+  position: relative;
+  left: -5px;
+  top: -10px;
+}
+.startScreen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+.startScreen h1,
+.startScreen h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(248, 61, 61);
+  font-size: 60px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px black;
+  -webkit-text-fill-color: white;
+  letter-spacing: 2px;
+}
+.startScreen h2 {
+  top: 57%;
+  font-size: 48px;
+}
