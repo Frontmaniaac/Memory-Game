@@ -46,6 +46,7 @@ function flipMemo() {
     }
   }
 }
+
 function resetBoard() {
   [flipped, lockGame] = [false, false];
   [firstMemo, secondMemo] = [null, null];
@@ -60,7 +61,7 @@ const handleStart = () => {
       seconds--;
       time.textContent = `00:0${seconds}`;
     } else if (score === 8 && seconds > 0) {
-      startScreen.style.display = "block";
+      startScreen.style.display = "flex";
       gg.style.display = "block";
       startText.textContent = `You score ${score} in ${59 - seconds} seconds`;
       endText.textContent = `Click to restart `;
@@ -70,7 +71,7 @@ const handleStart = () => {
       });
     } else {
       time.textContent = `00:00`;
-      startScreen.style.display = "block";
+      startScreen.style.display = "flex";
       gg.style.display = "block";
       startText.textContent = `Your score was ${score}`;
       endText.textContent = `Click to restart `;

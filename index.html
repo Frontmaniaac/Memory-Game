@@ -1,190 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-    <title>Memo Game</title>
-  </head>
-  <body>
-    <div class="upperText">
-      <h1>Memory Game</h1>
-      <h3>Timer</h3>
-      <p class="time">00:59</p>
-    </div>
-    <div class="memoGameWrap">
-      <div class="memoWrap">
-        <div class="flip" data-name="one">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="tree.png" alt="tree" />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+  <title>Memo Game</title>
+</head>
+
+<body>
+  <div class="upperText">
+    <h1>Memory Game</h1>
+    <h3>Timer</h3>
+    <p class="time">00:59</p>
+  </div>
+  <div class="memoGameWrap">
+    <div class="memoWrap">
+      <div class="flip" data-name="one">
+        <div class="cardBack">
+          <p>Memo Game</p>
         </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="one">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="tree.png" alt="tree" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="two">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="apple.png" alt="apple" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="two">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="apple.png" alt="apple" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="three">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="sword.png" class="sword" alt="sword" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="three">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="sword.png" class="sword" alt="sword" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="four">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="ball.png" alt="ball" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="four">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="ball.png" alt="ball" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="five">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="storm.png" alt="storm" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="five">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="storm.png" alt="storm" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="six">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="ice.png" alt="ice" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="six">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="ice.png" alt="ice" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="seven">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="diamond.png" class="diamond" alt="diamond" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="seven">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="diamond.png" class="diamond" alt="diamond" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="eight">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="orange.png" class="orange" alt="orange" />
-          </div>
-        </div>
-      </div>
-      <div class="memoWrap">
-        <div class="flip" data-name="eight">
-          <div class="cardBack">
-            <p>Memo Game</p>
-          </div>
-          <div class="cardFront">
-            <img src="orange.png" class="orange" alt="orange" />
-          </div>
+        <div class="cardFront">
+          <img src="images/tree.png" alt="tree" />
         </div>
       </div>
     </div>
-    <div class="startScreen">
-      <h1 class="gg">Game Over</h1>
-      <h1 class="startText">Press anywhere to start</h1>
-      <h2 class="endText"></h2>
+    <div class="memoWrap">
+      <div class="flip" data-name="one">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/tree.png" alt="tree" />
+        </div>
+      </div>
     </div>
-    <script src="code.js"></script>
-  </body>
+    <div class="memoWrap">
+      <div class="flip" data-name="two">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/apple.png" alt="apple" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="two">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/apple.png" alt="apple" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="three">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/sword.png" class="sword" alt="sword" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="three">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/sword.png" class="sword" alt="sword" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="four">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/ball.png" alt="ball" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="four">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/ball.png" alt="ball" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="five">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/storm.png" alt="storm" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="five">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/storm.png" alt="storm" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="six">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/ice.png" alt="ice" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="six">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/ice.png" alt="ice" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="seven">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/diamond.png" class="diamond" alt="diamond" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="seven">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/diamond.png" class="diamond" alt="diamond" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="eight">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/orange.png" class="orange" alt="orange" />
+        </div>
+      </div>
+    </div>
+    <div class="memoWrap">
+      <div class="flip" data-name="eight">
+        <div class="cardBack">
+          <p>Memo Game</p>
+        </div>
+        <div class="cardFront">
+          <img src="images/orange.png" class="orange" alt="orange" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="startScreen">
+    <h1 class="gg">Game Over</h1>
+    <h1 class="startText">Press anywhere to start</h1>
+    <h2 class="endText"></h2>
+  </div>
+  <script src="code.js"></script>
+</body>
+
 </html>
